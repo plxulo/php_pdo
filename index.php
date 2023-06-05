@@ -23,6 +23,15 @@
         <h1>Bem vindo, <?php echo $logado ?>!</h1>
         <a href="logout.php">Sair da conta</a>
     </header>
+
+    <section class="alterar_nome">
+        <form action="alterar_nome.php" method="POST">
+            <p>Seu nome atual é: <?php echo $logado ?></p>
+            <label for="alterar_nome">Alterar nome:</label><input type="text" id="alterar_nome" name="novo_nome">
+
+            <button type="submit">Alterar</button>
+        </form>
+    </section>
 </body>
 
 </html>

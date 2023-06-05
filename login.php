@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="cadastro_pdo.php" method="post">
+    <form action="validacao_pdo.php" method="post">
 
         <label for="nome">Nome de usuário:</label>
         <br>
