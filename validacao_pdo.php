@@ -22,12 +22,14 @@
         // Validação deu certo:
         if ($sql->rowCount() > 0) {
             // Houve um retorno similar à entrada do usuário:
-            $row = $sql->fetch(PDO::FETCH_ASSOC);
-            $_SESSION['id_usuario'] = $row['id_usuario'];
-            $_SESSION['usuario'] = $row['nome'];
-            $_SESSION['senha'] = $row['senha'];
+            $_SESSION['id_usuario'] = $id_usuario;
+            $_SESSION['usuario'] = $nome;
+            $_SESSION['senha'] = $senha;
 
-            header('Location: index.php');
+            echo ("<script type = text/javascript>");
+            echo ("window.location = 'index.php'");
+            echo ("</script>");    
+
             exit();
         }
         else
